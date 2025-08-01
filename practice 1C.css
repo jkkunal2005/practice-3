@@ -1,0 +1,89 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #4CAF50;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.toggle {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #eee;
+  padding: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.main {
+  grid-area: main;
+  padding: 1.5rem;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Dark Theme Styles */
+body.dark {
+  background-color: #222;
+  color: #ddd;
+}
+
+body.dark .header,
+body.dark .footer {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark .sidebar {
+  background-color: #444;
+}
+
+body.dark .main {
+  background-color: #111;
+  color: #eee;
+}
+
+body.dark a {
+  color: #bb86fc;
+}
