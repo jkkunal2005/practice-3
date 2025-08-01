@@ -30,7 +30,7 @@ A responsive Admin Dashboard interface built using **HTML**, **CSS Grid**, and *
 
 ## 📸 Screenshot
 
-![UI Preview](Screenshot%202025-08-01%20134259.png)
+![UI Preview](Screenshot%202025-08-01%20134550.png)
 
 > Ensure `Screenshot.png` is saved in the same folder as the HTML file and README so it displays correctly.
 
